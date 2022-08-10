@@ -4,4 +4,4 @@ function sayhello() {
   console.log("hello");
 }
 
-setInterval(sayhello, 3000);
+setTimeout(sayhello, 3000);

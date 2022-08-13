@@ -5,7 +5,7 @@ const toDoList = document.querySelector(".todo-list");
 const toDos = [];
 
 function saveToDo() {
-  localStorage.setItem("todos", toDos);
+  localStorage.setItem("todos", JSON.stringify(toDos));
 }
 function deleteToDo(event) {
   const li = event.target.parentElement;

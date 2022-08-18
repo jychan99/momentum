@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,31 +8,31 @@
     <title>momentum App</title>
   </head>
   <body>
-    <form class="hidden login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
+    <div class="box">
+      <form class="hidden login-form">
+        <input class="login-form__text" required maxlength="15" type="text" />
+        <input class="login-form__button" type="submit" value="✔" />
+      </form>
 
-    <h2 class="clock">00:00:00</h2>
+      <h1 class="hidden greeting"></h1>
 
-    <h1 class="hidden greeting"></h1>
+      <h2 class="clock">00 : 00 : 00</h2>
 
-    <form class="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul class="todo-list"></ul>
+      <form class="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul class="todo-list"></ul>
 
-    <div class="quotes">
-      <span></span>
-      <span></span>
-    </div>
+      <div class="quotes">
+        <span></span>
+        <span></span>
+      </div>
 
-    <div class="weather">
+      <div class="weather"></div>
       <span></span>
       <span></span>
     </div>

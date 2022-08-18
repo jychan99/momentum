@@ -67,9 +67,29 @@ body {
 .clock {
   font-size: 90px;
   color: aliceblue;
+  margin-bottom: 40px;
+}
+
+.todo-form__text {
+  width: 350px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: aliceblue;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.todo-form__text::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-size: 25px;
+  text-align: center;
 }
 
 .quotes {
+  position: fixed;
+  bottom: 15px;
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: aliceblue;

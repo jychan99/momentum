@@ -1,15 +1,9 @@
 @import "reset.css";
+@import "animations.css";
+@import "variables.css";
 .hidden {
   display: none;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadeOut 0.5s linear;
 }
 body {
   animation: fadeIn 0.5s linear;
@@ -58,6 +52,7 @@ body {
 }
 
 .greeting {
+  animation: fadeIn 0.5s linear;
   font-size: 100px;
   color: aliceblue;
   text-align: center;
@@ -71,20 +66,37 @@ body {
 }
 
 .todo-form__text {
-  width: 350px;
+  width: 400px;
   height: 40px;
-  border: none;
+  border: 1px solid var(--myyellow);
+  border-radius: 10px;
   background: transparent;
   color: aliceblue;
   font-size: 25px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .todo-form__text::placeholder {
   color: white;
   opacity: 0.5;
   font-size: 25px;
+  font-weight: 600;
   text-align: center;
+}
+.todo-list {
+  font-weight: 600;
+  font-size: 25px;
+  text-decoration: underline;
+  color: var(--myyellow);
+}
+
+.todo-list button {
+  font-size: 25px;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
 }
 
 .quotes {
